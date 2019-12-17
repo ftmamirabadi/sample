@@ -1,0 +1,228 @@
+:root{
+    --theme-color: #aaa;
+}
+
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    color:var(--theme-color);
+}
+/*----------------------------------------------*/
+/*    start of  showcase    */
+.showcase{
+    background: url(./showcase.jpg) top left / cover;
+ /*   background-size: cover;*/
+    height: 122vh;
+}
+#container{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+}
+.showcase #container h1 {
+    text-shadow:1px 3px 14px #aaa;
+    font-size: 45px;
+    padding-top: 300px ;
+}
+.showcase #container h1 , .showcase #container h3 {
+       margin-bottom: 20px;
+  }
+/*      end of showcase  */
+
+/*-----------------------------------------*/
+
+/*      start of section 2   */
+.back-gray{
+     background-color: #222;
+     height: 150vh;
+}
+.back-gray #container h2{
+    text-shadow:1px 3px 14px #aaa;
+     padding-top: 15px;
+}
+.back-gray #container h2,
+.back-gray #container h3{
+    margin-bottom: 20px;
+    line-height: 2;
+}
+.back-gray #container .btn{
+    height: 45px;
+    background-color: #912a0d;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 0 15px 0px;
+   /* box-shadow: 0px 3px 25px rgb(71, 65, 65);*/
+}
+.back-gray #container .btn a{
+    text-decoration: none;
+    color: var(--theme-color);
+  
+}
+.back-gray p:nth-child(5){
+    margin-top: 20px;
+    font-size: 14px;
+}
+.back-gray img{
+    margin-top: 20px 0 50px;
+    width: 100%;
+}
+
+
+/*      end of  section 2    */
+
+/*--------------------------------------------*/
+
+/*   start of section3 */
+ .back-lightgray {
+    background-color: rgb(165, 165, 165);
+    color: #222;
+    height: 300vh;
+       }
+ .back-lightgray h2{
+     padding-top: 50px;
+     font-weight: 400px;
+       }
+ .back-lightgray P{
+     margin-top: 30px;
+       }
+ .back-lightgray #container .btn{
+    height: 45px;
+    background-color: rgb(27, 27, 75);
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 0 15px 0px;
+   /* box-shadow: 0px 3px 25px rgb(71, 65, 65);*/
+     }
+.back-lightgray #container .btn a{
+    color:var(--theme-color);
+    text-decoration: none;
+     }
+.back-lightgray img{
+    margin-bottom: 30px;
+    width: 100%;
+    }
+
+ .back-lightgray .sec4 {
+     background: url(./section-bg.jpg) 0px -351px;
+     height: 500px;
+     background-size: 120% 170%;
+     padding: 100px 0 150px;
+     color:var(--theme-color);
+ }
+.back-lightgray .sec4 h2{
+ 
+    font-weight: 400px;
+}
+.two-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: ;
+    grid-gap: 20px;
+    padding-top: 50px;
+}
+.two-part img{
+    width: 100%;
+}
+.two-part a{
+    text-decoration: none;
+   /* font-weight: 400;*/
+    color: rgb(27, 27,75) ;
+    text-align: left !important;
+}
+.two-part .left{
+    text-align: left;
+}
+.two-part .bord{
+    border: 2px solid transparent;
+    border-bottom-color: #333333;
+    
+}
+
+/*    end  of   section 3 */
+/*--------------------------------------------*/
+/*    start of footer   */
+footer{
+    background-color: #111;
+    color: var(--theme-color);
+}
+
+    #services {
+   
+        min-height: 250px;  
+        padding: 30px 0px 30px;
+     }
+
+    #services .box{
+        float: left;
+        width: 25%;
+        padding: 0px 25px 0px;
+        text-align: left;
+    }
+    #services .box ul{
+        margin-top: 25px;
+        margin-bottom: 20px;
+       list-style-type: none;
+    }
+    #services .box ul li{
+        text-align: laft;
+      /*  letter-spacing: -1px; */
+    }
+    #services .box .bord{
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-bottom-color: #333333;
+        
+    }
+    footer .end{
+        width: 100%;
+        background-color: #222;
+        padding:20px;
+       text-align: center;
+    }
+
+/*     enf of footer     */
+
+
+
+@media (max-width: 768px){
+    .showcase ,.back-gray,.back-lightgray,.sec4,#services .box ,#container {
+        float: none;
+        width: 100% !important;
+        height: 100%;
+        text-align: center;
+       
+    }
+    #container{
+        padding:40px 20px 30px;
+    }
+     .showcase #container h1{
+        padding-top: 100px;
+    }  
+   
+ .two-part{
+             grid-template-columns: repeat(1, 1fr);
+ }
+ .two-part .left{
+     width: 100%;
+     margin: 0 auto;
+     padding:0px 45px 30px;
+ }
+ .box {
+     margin-bottom: 50px;
+ }
+
+.back-lightgray .sec4 {
+    padding: 10px !important;
+} 
+.back-gray .sec4 h2{
+    padding-top: 0px ;
+}
+}
