@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    }
+body{
+    
+    font-family: 'pridi';
+    background: url(./background.png);
+    background-size: 120vh 100%;
+    padding: 20px;
+  
+   }
+#content{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+
+    display: flex;
+    margin-bottom: 20px
+}
+header h3{
+    
+    color: #999;
+    font-size: 14px;
+    padding-top: 0px !important;
+}
+header ul{
+    list-style-type:none;
+    
+}
+header ul li
+,b{
+    display: inline;
+}
+header ul a{
+    
+    padding: 10px;
+}
+.active {
+    color: purple;
+}
+.headerleft{
+    line-height: 1;
+}
+.headerright{
+    /*align-content: flex-end;*/
+     padding-left: 372px; 
+}
+.bordr{
+    border: 2px solid rgb(214, 213, 213);   
+    background-color: floralwhite;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.bordr a{
+    display: flex;
+    padding: 20px 0px;
+}
+.middle{
+    display: flex;
+}
+main{
+    width: 75%
+ 
+
+}
+main p{
+    line-height:1.5;
+}
+aside{
+    width: 25%;
+    margin-left: 20px;
+
+ 
+}
+p{
+    font-family: monospace !important;
+}
+h3{
+    
+    padding:6px 0px;
+}
+.brd{
+    border:2px dashed gray;
+
+}
+img{
+    float: right;
+    padding-top: 12px;
+}
